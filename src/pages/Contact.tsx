@@ -7,8 +7,6 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { 
   Mail, 
-  Phone, 
-  MapPin, 
   Clock,
   Send,
   MessageSquare,
@@ -23,20 +21,6 @@ const contactInfo = [
     description: "Send us an email anytime",
     contact: "info@neonerds.com",
     link: "mailto:info@neonerds.com"
-  },
-  {
-    icon: Phone,
-    title: "Call Us",
-    description: "Available 24/7 for support",
-    contact: "+91 98765 43210",
-    link: "tel:+919876543210"
-  },
-  {
-    icon: MapPin,
-    title: "Visit Us",
-    description: "Our office location",
-    contact: "Bangalore, Karnataka, India",
-    link: "#"
   },
   {
     icon: Clock,
@@ -142,10 +126,6 @@ export default function Contact() {
                         <Input type="email" placeholder="john@example.com" />
                       </div>
                       
-                      <div>
-                        <label className="text-sm font-medium mb-2 block">Phone Number</label>
-                        <Input placeholder="+91 98765 43210" />
-                      </div>
                       
                       <div>
                         <label className="text-sm font-medium mb-2 block">Service Interest</label>
@@ -205,13 +185,6 @@ export default function Contact() {
                   <CardContent className="p-8">
                     <h3 className="text-xl font-bold mb-4">Need Immediate Help?</h3>
                     <div className="space-y-4">
-                      <Button variant="secondary" className="w-full justify-start" asChild>
-                        <a href="tel:+919876543210" className="flex items-center gap-3">
-                          <Phone className="h-4 w-4" />
-                          Call Now: +91 98765 43210
-                        </a>
-                      </Button>
-                      
                       <Button variant="secondary" className="w-full justify-start" asChild>
                         <a href="mailto:info@neonerds.com" className="flex items-center gap-3">
                           <Mail className="h-4 w-4" />

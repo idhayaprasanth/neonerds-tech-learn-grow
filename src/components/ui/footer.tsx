@@ -4,8 +4,6 @@ import { Input } from "@/components/ui/input";
 import { Separator } from "@/components/ui/separator";
 import { 
   Mail, 
-  Phone, 
-  MapPin, 
   Facebook, 
   Twitter, 
   Linkedin, 
@@ -60,14 +58,6 @@ export function Footer() {
               <div className="flex items-center gap-3 text-sm">
                 <Mail className="h-4 w-4 text-primary" />
                 <span>info@neonerds.com</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm">
-                <Phone className="h-4 w-4 text-primary" />
-                <span>+91 98765 43210</span>
-              </div>
-              <div className="flex items-center gap-3 text-sm">
-                <MapPin className="h-4 w-4 text-primary" />
-                <span>Bangalore, Karnataka, India</span>
               </div>
             </div>
           </div>
