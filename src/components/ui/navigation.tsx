@@ -5,7 +5,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import neonerdsLogo from "@/assets/neonerds-logo.png";
+
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -32,7 +32,7 @@ export function Navigation() {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3">
           <img 
-            src={neonerdsLogo} 
+            src="/neonerds-logo.png" 
             alt="NeoNerds Logo" 
             className="h-8 w-8"
           />
