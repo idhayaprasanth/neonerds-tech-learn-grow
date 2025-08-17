@@ -34,9 +34,9 @@ export function Navigation() {
           <img 
             src="/neonerds-logo.png" 
             alt="NeoNerds Logo" 
-            className="h-8 w-8"
+            className="h-10 w-10 object-contain"
           />
-          <div className="text-2xl font-bold text-black dark:text-white">
+          <div className="text-2xl font-bold text-foreground">
             NeoNerds
           </div>
         </Link>

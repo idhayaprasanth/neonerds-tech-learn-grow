@@ -1,22 +1,18 @@
-# Welcome to your Lovable project
+# NeoNerds - IT Solutions & EdTech Excellence
+
+Modern IT solutions and educational technology platform built with React, TypeScript, and Tailwind CSS.
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/d9c50baf-3d96-4c6d-8f7c-9c14c23908a1
+**Live Site**: https://neonerds-tech-learn-grow.github.io/
 
 ## How can I edit this code?
 
 There are several ways of editing your application.
 
-**Use Lovable**
+**Local Development**
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d9c50baf-3d96-4c6d-8f7c-9c14c23908a1) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Clone this repository and work with your preferred IDE. Push changes to see them reflected on the live site.
 
 The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
@@ -62,12 +58,10 @@ This project is built with:
 
 ## How can I deploy this project?
 
-Simply open [Lovable](https://lovable.dev/projects/d9c50baf-3d96-4c6d-8f7c-9c14c23908a1) and click on Share -> Publish.
+The project is automatically deployed to GitHub Pages when changes are pushed to the main branch.
 
-## Can I connect a custom domain to my Lovable project?
+## Custom Domain Setup
 
-Yes, you can!
+You can connect a custom domain by configuring your DNS settings to point to the GitHub Pages deployment.
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Set up CNAME records as needed for your domain provider.
