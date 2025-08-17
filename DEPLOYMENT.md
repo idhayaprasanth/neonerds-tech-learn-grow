@@ -1,6 +1,6 @@
 # 🚀 Deploy to GitHub Pages
 
-This guide will help you deploy your NeoNerds website to GitHub Pages for free.
+This guide will help you deploy your NeoNerds website to GitHub Pages for free using GitHub Actions.
 
 ## 📋 Prerequisites
 
@@ -35,12 +35,7 @@ npm install
 
 ### 4. Deploy
 
-#### Option A: Manual Deployment
-```bash
-npm run deploy
-```
-
-#### Option B: Automatic Deployment (Recommended)
+#### Automatic Deployment (Recommended)
 1. Push your code to the `main` branch
 2. GitHub Actions will automatically build and deploy
 3. Check the **Actions** tab in your repository for deployment status
@@ -48,15 +43,16 @@ npm run deploy
 ## 🔧 How It Works
 
 - **GitHub Actions**: Automatically builds and deploys on every push to main branch
+- **Official GitHub Actions**: Uses `actions/deploy-pages@v4` for reliable deployment
 - **Base Path**: Configured for repository name `/neonerds-tech-learn-grow/`
 - **SPA Support**: 404.html handles client-side routing
 - **Build Output**: Deploys from the `dist` folder
 
 ## 📁 Files Added/Modified
 
-- `package.json` - Added deployment scripts and gh-pages dependency
+- `package.json` - Added homepage field for correct base path
 - `vite.config.ts` - Added base path configuration
-- `.github/workflows/deploy.yml` - GitHub Actions workflow
+- `.github/workflows/deploy.yml` - GitHub Actions workflow using official actions
 - `public/404.html` - SPA routing support
 
 ## 🌐 Access Your Site
@@ -75,7 +71,7 @@ Simply push changes to the `main` branch - GitHub Actions will automatically red
 1. **Build fails**: Check the Actions tab for error details
 2. **Site not loading**: Verify the homepage URL in package.json
 3. **Routing issues**: Ensure 404.html is in the public folder
-4. **Dependencies**: Run `npm install` if gh-pages is missing
+4. **Permission errors**: Make sure Pages source is set to "GitHub Actions" in repository settings
 
 ## 📚 Additional Resources
 
