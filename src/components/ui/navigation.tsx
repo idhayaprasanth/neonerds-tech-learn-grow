@@ -53,6 +53,12 @@ export function Navigation() {
                   ? "text-primary"
                   : "text-muted-foreground hover:text-foreground"
               )}
+              onAuxClick={(e) => {
+                if (e.button === 1) { // Middle click
+                  e.preventDefault();
+                  window.open(item.href, '_blank');
+                }
+              }}
             >
               {item.name}
               {isActive(item.href) && (
