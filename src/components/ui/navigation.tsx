@@ -32,7 +32,7 @@ export function Navigation() {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3">
           <img 
-            src="/neonerds-logo.png" 
+            src={`${import.meta.env.BASE_URL}neonerds-logo.png`}
             alt="NeoNerds Logo" 
             className="h-10 w-10 object-contain"
           />
