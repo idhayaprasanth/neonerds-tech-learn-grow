@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # or master, whichever branch you use
+      - main  # or master
 
 permissions:
   contents: read
@@ -20,18 +20,17 @@ jobs:
       - name: Build
         run: npm run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v1   # ✅ changed to v1
         with:
-          path: ./dist   # or build folder (depends on your project)
+          path: ./dist   # or your build folder
 
   deploy:
     environment:
-      name: github-pages   # ✅ required
+      name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
-
+        uses: actions/deploy-pages@v1   # ✅ changed to v1
